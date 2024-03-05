@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_USER=wotw
+      - POSTGRES_PASSWORD=wotw
+      - POSTGRES_DB=wotw_db
+    ports:
+      - '5432:5432'
